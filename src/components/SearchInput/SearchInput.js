@@ -17,6 +17,8 @@ const SearchInput = ({ label, ...delegated }) => {
 
 const Label = styled.label`
   position: relative;
+  /* To be optically centered */
+  top: 2px;
 `;
 
 const Input = styled.input`
