@@ -27,22 +27,27 @@ const Header = () => {
 };
 
 const MainHeader = styled.div`
-  padding: 26px 32px;
+  padding: 26px 200px;
   border-bottom: 1px solid ${COLORS.gray[300]};
   position: relative;
+  display: flex;
+  flex-direction: column;
 `;
 
 /* Nav is centered regardless of this element */
 const StyledLogo = styled(Logo)`
   position: absolute;
-  inset: 0;
-  right: auto;
-  padding-left: 32px;
+  top: 0;
+  left: 32px;
+  bottom: 3px;
   display: flex;
-  align-items: center;
+  align-items: center;  
 `
 
+/* Margin auto doesn't center when there's missing space */
 const Nav = styled.nav`
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: center;
   gap: 48px;
