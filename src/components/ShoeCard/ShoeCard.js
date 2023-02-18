@@ -31,6 +31,8 @@ const ShoeCard = ({
       ? 'new-release'
       : 'default'
 
+  const realImgSrc = process.env.PUBLIC_URL + imageSrc
+
   const Flag = ({variant}) => {
     const isOnSale = variant === "on-sale"
     const txt = isOnSale ? "Sale" : "Just released!"
@@ -47,7 +49,7 @@ const ShoeCard = ({
             ? <Flag variant={variant} />
             : <></>
           }
-          <Image alt="" src={imageSrc} />
+          <Image alt="" src={realImgSrc} />
         </ImageWrapper>
         <Spacer size={12} />
         <Row>
