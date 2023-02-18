@@ -57,7 +57,9 @@ const MainColumn = styled.div`
 `;
 
 const Header = styled.header`
-
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
 `;
 
 const Title = styled.h2`
